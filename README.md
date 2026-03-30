@@ -1,6 +1,6 @@
 # Chess AI (2000)
 
-A chess engine with minimax search and alpha-beta pruning, written in Turbo C++ for DOS in June-July 2000.
+A chess engine with minimax search and alpha-beta pruning, written in Turbo C++ for DOS in June-July 2000 -- my first ever AI program!
 
 ## What It Does
 
