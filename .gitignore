@@ -1,0 +1,6 @@
+*.exe
+*.obj
+*.bak
+*.pif
+*.o
+.DS_Store
