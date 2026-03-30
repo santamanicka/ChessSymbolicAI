@@ -53,11 +53,37 @@ All rendering uses Turbo C **BGI (Borland Graphics Interface)**:
 
 ```
 src/
-  chessfinal.cpp    Main game: board setup, AI search, game loop (Jul 29, 2000)
+  chess.cpp         Main game: board setup, AI search, game loop (Jul 29, 2000)
   board.cpp         Graphics: board drawing and all piece rendering
   legalmov.cpp      Move validation: scan() for path obstacles, verify() for legal moves
   looknfee.cpp      UI: cursor blinking, square selection, rectangle redrawing
 ```
+
+## How to Run
+
+This program was written for DOS using Turbo C++ 3.0 and its BGI graphics library. It won't compile with modern compilers, but you can run it in an emulated environment:
+
+### Using DOSBox + Turbo C++
+
+1. Install [DOSBox](https://www.dosbox.com/) (or DOSBox-X for better graphics support)
+2. Download [Turbo C++ 3.0](https://archive.org/details/turboc3) from the Internet Archive
+3. Mount your working directory in DOSBox:
+   ```
+   mount C /path/to/ChessAI
+   mount D /path/to/turboc3
+   D:\INSTALL
+   ```
+4. Launch Turbo C++ and open `src/chess.cpp`
+5. Compile and run (Alt+R) from within the IDE
+
+### Controls
+
+- **Arrow keys** -- move the cursor across the board
+- **Delete** -- select (pick up) a piece
+- **Insert** -- place the selected piece on the current square
+- **Esc** -- quit
+
+At startup, you'll be prompted to choose Black or White. The computer plays the opposite side.
 
 ## Technical Notes
 
